@@ -1,0 +1,20 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Login from "./pages/Login"
+import Register from "./pages/Register"
+
+function App() {
+
+  return (
+    <div className="mx-4 h-screen overflow-auto">
+      {/* <h1 className="text-center font-bold mt-5 text-2xl">Crypto Analytics Dashboard</h1> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  )
+}
+
+export default App
